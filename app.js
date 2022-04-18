@@ -97,13 +97,13 @@ for (var i=0; i<qwerty.length; i++) {
       let overlayText = document.querySelector(`#overlay .title`);
       var letter = document.querySelectorAll('.letter');
       if ( show.length === letter.length  ) {
-        overlay.style.display = `block`;
+        overlay.style.display = `flex`;
         overlay.classList.add("win");
         overlayText.innerHTML = '<h2> You win!</h2>';
         overlay.classList.remove('lose');
 
       } if (missed >= 5) {
-        overlay.style.display = `block`;
+        overlay.style.display = `flex`;
         overlay.classList.add("lose");
         overlay.classList.remove('win');
         overlayText.innerHTML = '<h2> You lose! Better luck next time.</h2>';
